@@ -1,38 +1,29 @@
 {
 	"schemaVersion": 1,
-	"id": "extra-placeholders",
+	"id": "more-placeholders",
 	"version": "${version}",
-	"name": "Extra Placeholders",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "More Placeholders",
+	"description": "Adds back removed FancyMenu scoreboard/tag/team placeholders, plus a new 'Players With Score' placeholder. Requires FancyMenu. Install on the server too for full scoreboard and tag support.",
 	"authors": [
-		"Me!"
+		"joel4848"
 	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
+	"contact": {},
 	"license": "CC0-1.0",
-	"icon": "assets/extra-placeholders/icon.png",
+	"icon": "assets/more-placeholders/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.joel4848.extraplaceholders.ExtraPlaceholders"
+			"com.joel4848.moreplaceholders.MorePlaceholders"
 		],
 		"client": [
-			"com.joel4848.extraplaceholders.client.ExtraPlaceholdersClient"
+			"com.joel4848.moreplaceholders.client.MorePlaceholdersClient"
 		]
 	},
-	"mixins": [
-		"extra-placeholders.mixins.json",
-		{
-			"config": "extra-placeholders.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
-		"fabricloader": ">=0.19.3",
+		"fabricloader": ">=0.18.0",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"fancymenu": "*"
 	}
 }
