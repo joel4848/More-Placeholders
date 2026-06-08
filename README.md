@@ -12,6 +12,29 @@ It also adds a new placeholder: Players With Score (players_with_score). This re
 
 ## Placeholders
 
+**Scoreboard:**
+- Scoreboard Score (scoreboard_score) - _Returns the score of a player for a given scoreboard objective._
+- Scoreboard Objectives List (scoreboard_objectives_list) - _Returns a separated list of all scoreboard objective names._
+- Scoreboard Tracked Players (scoreboard_tracked_players) - _Returns a separated list of all score holders tracked by the scoreboard (i.e. anyone with at least one score)._
+- Scoreboard Display Slot (scoreboard_display_slot) - _Returns the name of the objective currently displayed in the given display slot._
+- Scoreboard Display Slot (scoreboard_display_slot) - _Returns the name of the objective currently displayed in the given display slot._
+- Scoreboard Has Score (scoreboard_has_score) - _Returns `true` if the given player has a score for the given objective, `false` otherwise._
+- Scoreboard Objective Display Name (scoreboard_objective_display_name) - _Returns the display name of a scoreboard objective._
+- Scoreboard Objective Criteria (scoreboard_objective_criteria) - _Returns the criteria of a scoreboard objective (e.g. `dummy`, `playerKillCount`)._
+- Scoreboard Objective Render Type (scoreboard_objective_render_type) - _Returns the render type of a scoreboard objective — either `integer` or `hearts`._
+- Scoreboard Player Scores List (scoreboard_player_scores_list) - _Returns a formatted, separated list of all scores a player has across every objective._
+- Scoreboard Objective Count (scoreboard_objective_count) - _Returns the total number of scoreboard objectives._
+
+**Team:**
+- Player Team (player_team) - _Returns the scoreboard team name of the specified player. Returns empty if the player is not on a team._
+
+**Tag:**
+- Players With Score (players_with_score) - _Returns a separated list of all score holders whose score for a given objective matches a value or range. Uses the same range syntax as Minecraft commands._
+- Player Has Tag (player_has_tag) - _Returns `true` if the named player has the given tag (as applied by `/tag`), `false` otherwise._
+- Player Tags List (player_tags_list) - _Returns a sorted, separated list of all tags on the named player._
+
+## Usage Guide
+
 > **Note:** Although this mod can be used only on the **client**, for scoreboard and tag placeholders to work fully the mod must also be installed on the **server**. Without the server-side install, these placeholders fall back to whatever vanilla syncs, which is limited.
 
 ### Scoreboard
